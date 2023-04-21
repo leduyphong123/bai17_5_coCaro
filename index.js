@@ -2,10 +2,11 @@ let newCaro = document.getElementById("newCaro");
 let arr = [];
 let topNew = 0;
 let count = 0;
-for (let i = 0; i < 10; i++) {
+let indexArr=20;
+for (let i = 0; i < indexArr; i++) {
     let left = 0;
     let arrOne = [];
-    for (let j = 0; j < 10; j++) {
+    for (let j = 0; j < indexArr; j++) {
         arrOne.push("<div id='caro-" + i + "-" + j + "' class='caro' style='top:" + topNew + "px;left:" + left + "px' onclick='btn(" + i + "," + j + ")'></div>");
         left += 40;
     }
